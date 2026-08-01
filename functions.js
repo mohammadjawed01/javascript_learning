@@ -100,7 +100,7 @@ console.log(`factorial = ${factorial}`);
 
 // ***********************************************************************************
 
-function isPositivevalue{
+function isPositivevalue(num) {
     if (num === 0) {
         return "Zero";
     } else if (num > 0) {
