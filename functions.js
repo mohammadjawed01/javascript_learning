@@ -212,5 +212,50 @@ console.log(findMax([10, 5, 80, 25]));
 
 // ***********************************************************************************
 
+function countEven(arr) {
+   let result =  arr.filter(function (value) {
+       return value % 2 === 0;
+    });
+    console.log(result.length);
+}
+countEven([1, 2, 3, 4, 6]);
 
+
+// ***********************************************************************************
+
+function countEven(arr) {
+    return arr.filter(value => value % 2 === 0).length;
+}
+
+console.log(countEven([1,2,3,4,6]));
+
+// ***********************************************************************************
+
+function sumEven(arr) {
+    let sum = 0;
+
+    arr.forEach(function (value) {
+        if(value % 2 === 0){
+            sum += value;
+        }
+    });
+
+    return sum;
+}
+
+// ***********************************************************************************
+
+for(let char of str){
+    if(
+        char==="a"||
+        char==="e"||
+        char==="i"||
+        char==="o"||
+        char==="u"
+    ){
+        count++;
+    }
+}
+
+// ***********************************************************************************
 
