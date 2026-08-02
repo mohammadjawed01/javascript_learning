@@ -94,3 +94,156 @@ let teacher = {
 };
 
 teacher.start();
+
+
+//***********************************************************************************
+
+let student = {
+    name: "Mohammad",
+    age: 20
+};
+
+for (let key in student) {
+    console.log(key);
+}
+
+//***********************************************************************************
+
+let student = {
+    name: "Mohammad",
+    age: 20
+};
+
+for (let key in student) {
+    console.log(student[key]);
+}
+
+//***********************************************************************************
+
+let info = {
+    name: "Mohammad",
+    age: 20,
+    city: "Delhi"
+};
+
+for (let key in info) {
+    console.log(key);
+
+}
+
+//***********************************************************************************
+
+let info = {
+    name: "Mohammad",
+    age: 20,
+    city: "Delhi"
+};
+
+for (let key in info) {
+    console.log(info[key]);
+
+}
+
+//***********************************************************************************
+
+let mobile = {
+    brand: "Apple",
+    price: 90000,
+    color: "Black"
+}
+console.log(Object.keys(mobile));
+
+//***********************************************************************************
+
+let mobile = {
+    brand: "Apple",
+    price: 90000,
+    color: "Black"
+}
+console.log(Object.values(mobile));
+
+//***********************************************************************************
+
+let object = {
+    language: "JavaScript",
+    type: "programming",
+    year: 1995
+}
+for (let key in object) {
+    console.log(key + " : " + object[key]);
+}
+
+//***********************************************************************************
+
+let student = {
+    name: "Mohammad",
+    address: {
+        city: "Delhi"
+    }
+};
+
+console.log(student.address.city);
+
+
+//***********************************************************************************
+
+let user = {
+    name: "MOhammad",
+    address: {
+        city: "Delhi",
+        state: "Delhi"
+    }
+};
+console.log(user.address.state);
+
+//***********************************************************************************
+
+let object = {
+    title: "JavaScript",
+        topics: ["Variables", "Functions", "Objects"]
+};
+    console.log(object.topics[1]);
+
+//***********************************************************************************
+
+let student = [
+    {
+        name: "Ali",
+        age: 20
+    },
+    {
+        name: "Rahul",
+        age: 21
+    }
+    ];
+console.log(student[1].name);
+
+//***********************************************************************************
+
+let students = [
+    {
+        name: "Ali",
+        age: 20
+    },
+    {
+        name: "Rahul",
+        age: 21
+    }
+    ];
+for (let student of students) {
+    console.log(student.name);
+}
+
+//***********************************************************************************
+
+let object = {
+    company: {
+        name: "OpenAI"
+    },
+    location: {
+        city: "San Francisco"
+    }
+};
+console.log(object.location.city);
+
+//***********************************************************************************
