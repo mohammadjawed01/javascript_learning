@@ -36,3 +36,61 @@ let obj = {
 obj.price = 90000
 
 console.log(obj);
+
+//***********************************************************************************
+
+let student = {
+    greet() {
+        console.log("Hello");
+    }
+};
+
+student.greet();
+
+//***********************************************************************************
+
+let car = {
+    brand: "BMW",
+    showBrand(){
+        console.log("BMW");
+}
+};
+car.showBrand();
+
+//***********************************************************************************
+
+let calculator = {
+    multiply(a, b){
+        return a * b;
+    }
+};
+console.log(calculator.multiply(5, 6));
+
+
+
+//***********************************************************************************
+
+let user = {
+    name: "Mohammad",
+    welcome(){
+        console.log(`Welcome ${user.name}`)
+    }
+}
+
+user.welcome();
+
+//***********************************************************************************
+
+let student = {
+    greet(){
+        console.log("Hello");
+    }
+};
+
+let teacher = {
+    start(){
+        student.greet();
+    }
+};
+
+teacher.start();
