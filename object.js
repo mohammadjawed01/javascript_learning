@@ -341,9 +341,9 @@ let object = {
         console.log(`Hello ${this.name}`);
         
     },
-    bye(){
-        this.greet();
-    }
+   bye() {
+    this.greet();
+    console.log("Good Bye");
+}
 };
 object.bye();
-console.log("Good Bye");
