@@ -329,6 +329,8 @@ let object = {
     }
 };
 object.increase();
+object.increase();
+object.increase();
 console.log(object.counter);
 
 //***********************************************************************************
