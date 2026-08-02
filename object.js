@@ -51,16 +51,16 @@ student.greet();
 
 let car = {
     brand: "BMW",
-    showBrand(){
+    showBrand() {
         console.log("BMW");
-}
+    }
 };
 car.showBrand();
 
 //***********************************************************************************
 
 let calculator = {
-    multiply(a, b){
+    multiply(a, b) {
         return a * b;
     }
 };
@@ -72,7 +72,7 @@ console.log(calculator.multiply(5, 6));
 
 let user = {
     name: "Mohammad",
-    welcome(){
+    welcome() {
         console.log(`Welcome ${user.name}`)
     }
 }
@@ -82,13 +82,13 @@ user.welcome();
 //***********************************************************************************
 
 let student = {
-    greet(){
+    greet() {
         console.log("Hello");
     }
 };
 
 let teacher = {
-    start(){
+    start() {
         student.greet();
     }
 };
@@ -200,9 +200,9 @@ console.log(user.address.state);
 
 let object = {
     title: "JavaScript",
-        topics: ["Variables", "Functions", "Objects"]
+    topics: ["Variables", "Functions", "Objects"]
 };
-    console.log(object.topics[1]);
+console.log(object.topics[1]);
 
 //***********************************************************************************
 
@@ -215,7 +215,7 @@ let student = [
         name: "Rahul",
         age: 21
     }
-    ];
+];
 console.log(student[1].name);
 
 //***********************************************************************************
@@ -229,7 +229,7 @@ let students = [
         name: "Rahul",
         age: 21
     }
-    ];
+];
 for (let student of students) {
     console.log(student.name);
 }
@@ -247,3 +247,101 @@ let object = {
 console.log(object.location.city);
 
 //***********************************************************************************
+
+let student = {
+    name: "Mohammad",
+
+    greet() {
+        console.log(this.name);
+    }
+};
+
+student.greet();
+
+//***********************************************************************************
+
+let student = {
+    name: "Mohammad",
+
+    changeName(newName) {
+        this.name = newName;
+    }
+};
+
+student.changeName("Rahul");
+
+console.log(student.name);
+
+
+//***********************************************************************************
+
+let bank = {
+    balance: 1000,
+
+    deposit(amount) {
+        this.balance += amount;
+    }
+};
+
+bank.deposit(500);
+
+console.log(bank.balance);
+
+
+//***********************************************************************************
+
+let object = {
+    name: "Mohammad",
+    sayHello() {
+        console.log(`Hello ${this.name}`);
+    }
+};
+object.sayHello();
+
+
+//***********************************************************************************
+
+let mobile = {
+
+    brand: "Apple",
+
+    price: 80000,
+
+    showPrice() {
+
+        console.log(this.brand);
+
+        console.log(this.price);
+
+    }
+
+};
+
+mobile.showPrice();
+
+
+//***********************************************************************************
+
+let object = {
+    counter: 0,
+    increase(){
+        this.counter++;
+    }
+};
+object.increase();
+console.log(object.counter);
+
+//***********************************************************************************
+
+let object = {
+    name: "Mohammad",
+    greet(){
+        console.log(`Hello ${this.name}`);
+        
+    },
+    bye(){
+        this.greet();
+    }
+};
+object.bye();
+console.log("Good Bye");
