@@ -324,7 +324,7 @@ mobile.showPrice();
 
 let object = {
     counter: 0,
-    increase(){
+    increase() {
         this.counter++;
     }
 };
@@ -337,13 +337,121 @@ console.log(object.counter);
 
 let object = {
     name: "Mohammad",
-    greet(){
+    greet() {
         console.log(`Hello ${this.name}`);
-        
+
     },
-   bye() {
-    this.greet();
-    console.log("Good Bye");
-}
+    bye() {
+        this.greet();
+        console.log("Good Bye");
+    }
 };
 object.bye();
+
+//***********************************************************************************
+
+//spread operator
+let numbers = [10, 20, 30];
+
+let copy = [...numbers];
+
+copy[0] = 100;
+
+console.log(numbers);
+console.log(copy);
+
+//***********************************************************************************
+//merging two arrays using spread operator
+
+let a = [1, 2];
+let b = [3, 4];
+
+let result = [...a, ...b];
+
+console.log(result);
+
+
+//***********************************************************************************
+
+//Add new elements to an array using spread operator
+let numbers = [20, 30];
+
+let result = [10, ...numbers, 40];
+
+console.log(result);
+
+//***********************************************************************************
+
+// ..merging two objects using spread operator
+let a = {
+    name: "Mohammad"
+};
+
+let b = {
+    age: 20
+};
+
+let result = {
+    ...a,
+    ...b
+};
+
+console.log(result);
+
+
+//***********************************************************************************
+
+let arr = [10, 20];
+
+let copy = [...arr];
+
+console.log(copy);
+
+
+//***********************************************************************************
+
+let a = {
+    name: "Ali"
+};
+
+let b = {
+    name: "Mohammad"
+};
+
+let result = {
+    ...a,
+    ...b
+};
+
+console.log(result.name);
+
+//***********************************************************************************
+let numbers = [10, 20, 30];
+let copies = [...numbers];
+console.log(copies);
+
+//***********************************************************************************
+
+let a = [1, 2];
+
+let b = [3, 4];
+
+let copies = [...a,...b];
+
+console.log(copies);
+
+//***********************************************************************************
+
+let numbers = [10, 20, 30];
+let newArr = [5,...numbers,40]
+console.log(newArr);
+
+//***********************************************************************************
+
+let student = {
+    name: "Mohammad"
+};
+let copy = {...student, course: "BCA"}
+console.log(copy);
+
+//***********************************************************************************
