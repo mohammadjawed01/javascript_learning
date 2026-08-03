@@ -455,3 +455,89 @@ let copy = {...student, course: "BCA"}
 console.log(copy);
 
 //***********************************************************************************
+
+//rest operator
+function sum(...numbers) {
+
+    let total = 0;
+
+    for (let num of numbers) {
+        total += num;
+    }
+
+    return total;
+}
+
+console.log(sum(10,20,30));
+
+//***********************************************************************************
+
+let student = {
+    name: "Mohammad",
+    age: 20,
+    city: "Delhi"
+};
+
+let { name, ...info } = student;
+
+console.log(info);
+
+//***********************************************************************************
+
+function show(...numbers) {
+    console.log(numbers);
+}
+
+show(5, 10);
+
+//***********************************************************************************
+
+function test(a, ...rest) {
+    console.log(a);
+    console.log(rest);
+}
+
+test(1, 2, 3, 4);
+
+//***********************************************************************************
+
+let arr = [100];
+
+let [first, ...rest] = arr;
+
+console.log(first);
+console.log(rest);
+
+//***********************************************************************************
+
+let numbers = [10, 20, 30, 40];
+let [a, ...rest] = numbers;
+console.log(a);
+console.log(rest);
+
+
+//***********************************************************************************
+
+let user = {
+    name: "Mohammad",
+    age: 20,
+    city: "Delhi"
+};
+let {name, ...rest} = user;
+console.log(name);
+console.log(rest);
+
+//***********************************************************************************
+
+function printNumbers(...number){
+    console.log(number);
+};
+printNumbers(5, 10, 15);
+
+//***********************************************************************************
+
+function  introduce(name, ...skills) {
+    console.log(name);
+    console.log(skills);
+}
+introduce("Mohammad", "HTML", "CSS", "JavaScript");
