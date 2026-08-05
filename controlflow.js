@@ -195,3 +195,46 @@ if (username === "admin") {
     console.log("Invalid Username");
 }
 
+// -------------------------------Switch case-------------------------------------------
+
+let day = 2;
+
+switch (day) {
+
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    case 3:
+        console.log("Wednesday");
+        break;
+
+    default:
+        console.log("Invalid Day");
+}
+
+// -------------------------------------------------------------------------------------
+
+let fruit = "Apple";
+
+switch (fruit) {
+
+    case "Banana":
+        console.log("Yellow");
+        break;
+
+    case "Apple":
+        console.log("Red");
+        break;
+
+    case "Orange":
+        console.log("Orange");
+        break;
+
+    default:
+        console.log("Unknown Fruit");
+}
