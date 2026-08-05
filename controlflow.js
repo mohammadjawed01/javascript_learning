@@ -90,3 +90,108 @@ console.log(true && true || false);
 
 console.log(!(true && false));
 
+// -------------------------------Conditional flow statement------------------------
+
+let age = 20;
+
+if (age >= 18) {
+    console.log("You can vote.");
+}
+
+// -------------------------------------------------------------------------------------
+
+let age = 25;
+let citizen = true;
+
+if (age >= 18 && citizen) {
+    console.log("Eligible to vote");
+}
+
+// -------------------------------------------------------------------------------------
+
+let age = Number(prompt("Enter your age"));
+
+if (age >= 18) {
+    alert("You can vote.");
+}
+
+// -------------------------------------------------------------------------------------
+
+let age = 15;
+
+if (age >= 18) {
+    console.log("You can vote");
+} else {
+    console.log("You cannot vote");
+}
+
+// -------------------------------------------------------------------------------------
+
+let age = Number(prompt("Enter your age"));
+
+if (age >= 18) {
+    alert("You can vote");
+} else {
+    alert("You cannot vote");
+}
+
+// -------------------------------------------------------------------------------------
+
+let marks = 95;
+
+if (marks >= 90) {
+    console.log("Grade A");
+} else if (marks >= 75) {
+    console.log("Grade B");
+} else if (marks >= 60) {
+    console.log("Grade C");
+} else {
+    console.log("Fail");
+}
+
+// -------------------------------------------------------------------------------------
+//nested if statement
+
+let age = 16;
+let hasLicense = true;
+
+if (age >= 18) {
+    if (hasLicense) {
+        console.log("You can drive.");
+    }
+}
+
+// -------------------------------------------------------------------------------------
+
+let age = 20;
+let hasLicense = false;
+
+if (age >= 18) {
+
+    if (hasLicense) {
+        console.log("You can drive");
+    } else {
+        console.log("Get a driving license first");
+    }
+
+} else {
+    console.log("You are too young to drive");
+}
+
+// -------------------------------------------------------------------------------------
+
+let username = "admin";
+let password = "1234";
+
+if (username === "admin") {
+
+    if (password === "1234") {
+        console.log("Login Successful");
+    } else {
+        console.log("Wrong Password");
+    }
+
+} else {
+    console.log("Invalid Username");
+}
+
