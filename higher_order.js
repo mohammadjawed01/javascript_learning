@@ -30,15 +30,65 @@ console.log(sum);
 
 let numbers = [2, 4, 6, 8, 10];
 for (let number of numbers) {
-    if (number>5) {
+    if (number > 5) {
         console.log(number);
     }
 }
 
 // ---------------------------------------------------------------------------
 
- let learn = ["HTML", "CSS", "JavaScript"];
+let learn = ["HTML", "CSS", "JavaScript"];
 for (let subject of learn) {
-    console.log(I an learning ${subject});
+    console.log(`I an learning ${subject}`);
+
+}
+
+// -----------------------------ForEach Loop--------------------------------
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+fruits.forEach(function (fruit) {
+    console.log(fruit);
+});
+
+// ---------------------------------------------------------------------------
+
+let numbers = [10, 20, 30];
+
+numbers.forEach(function (number) {
+    console.log(number);
+});
+
+// ---------------------------------------------------------------------------
+
+let numbers = [10, 20, 30];
+
+let sum = 0;
+
+numbers.forEach(function (number) {
+    sum += number;
+});
+
+console.log(sum);
+
+// ---------------------------------------------------------------------------
+
+let arr = [10, 20, 30];
+
+arr.forEach(function (value, index) {
+
+    arr[index] = value + 5;
+
+});
+
+console.log(arr);
+
+// ---------------------------------------------------------------------------
+
+let arr = [1, 2, 3]; 
+arr.forEach(function (value, index) { 
+    arr[index] = value * 2; 
+}); 
+    console.log(arr);
 
 // ---------------------------------------------------------------------------
