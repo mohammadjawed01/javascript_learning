@@ -91,4 +91,70 @@ arr.forEach(function (value, index) {
 }); 
     console.log(arr);
 
+// -------------------------------ForIn loop----------------------------------
+
+let student = {
+    name: "Mohammad",
+    age: 20,
+    course: "BCA"
+};
+
+for (let key in student) {
+    console.log(key);
+}
+
+// ---------------------------------------------------------------------------
+
+let student = {
+    name: "Mohammad",
+    age: 20,
+    course: "BCA"
+};
+
+console.log(Object.keys(student));
+
+// ---------------------------------------------------------------------------
+
+let student = {
+    name: "Mohammad",
+    age: 20
+};
+
+let keys = Object.keys(student);
+
+let upper = keys.map(function (key) {
+    return key.toUpperCase();
+});
+
+console.log(upper);
+
+// ---------------------------------------------------------------------------
+
+let phone = {
+    brand: "Samsung",
+    color: "Black"
+};
+
+console.log(Object.values(phone));
+
+// ---------------------------------------------------------------------------
+
+let student = {
+    name: "Mohammad",
+    course: "BCA"
+};
+
+for (let key in student) {
+    console.log(key + " : " + student[key]);
+}
+
+// ---------------------------------------------------------------------------
+
+let user = {
+    name: "Ali",
+    age: 25
+};
+
+console.log(Object.entries(user));
+
 // ---------------------------------------------------------------------------
