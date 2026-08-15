@@ -66,6 +66,33 @@ box2.innerHTML = `
 `;
 console.log(box2);
 
-let message = document.querySelector("#message");
-message.innerHTML = "<h1>Hello</h1>";
-console.log(message);
+// 16
+let message4 = document.querySelector("#message");
+message4.innerHTML = "<h1>Hello</h1>";
+console.log(message4);
+
+// 17
+let image = document.querySelector("#photo");
+image.setAttribute("src", "new.jpg");
+console.log(image.getAttribute("src"));
+
+// 18
+let link = document.querySelector("#link");
+console.log(link.getAttribute("href"));
+
+// 19
+let message= document.querySelector("#message");
+message.setAttribute("class", "highlight");
+console.log(message.getAttribute("class"));
+
+// 20
+let button1 = document.querySelector("#btn");
+button1.removeAttribute("disabled");
+
+// 21
+let box = document.querySelector("#box");
+box.setAttribute("data-name", "student");
+
+// 22
+let name = document.querySelector("#name");
+name.setAttribute("placeholder", "Enter your name");
