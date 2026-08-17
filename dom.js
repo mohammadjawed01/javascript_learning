@@ -133,3 +133,35 @@ let addText = document.createTextNode("jawed");
 div.appendChild(addText)
 
 document.body.appendChild(div)
+
+// 25
+function addLanguage(langName){
+    let li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector(".language").appendChild(li);
+}
+addLanguage("python");
+addLanguage("typescript");
+
+function addoptiLanguage(LangName) {
+    let li = document.createElement("li");
+    li.appendChild(document.createTextNode(LangName));
+    document.querySelector(".language").appendChild(li);
+}
+addoptiLanguage('golang');
+
+//Edit
+let secondlang = document.querySelector("li:nth-child(2)");
+// secondlang.innerHTML = "Mojo";
+let newLi = document.createElement("li");
+newLi.textContent = "Mojo"
+secondlang.replaceWith(newLi);
+
+//edit
+let firstlang = document.querySelector("li:first-child");
+firstlang.outerHTML = "<li>Typescript</li>"
+
+//remove
+
+let lastLang = document.querySelector("li:last-child")
+lastLang.remove()
