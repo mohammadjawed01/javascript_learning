@@ -118,3 +118,18 @@ console.log(dayOne.nextElementSibling);
 
 console.log("NODES: ", parent.childNodes);
 
+// 24
+let div = document.createElement('div')
+console.log(div);
+div.className = "main";
+div.id = Math.round(Math.random() * 10 + 1);
+
+div.setAttribute("Title", "generated title");
+div.style.backgroundColor = "green";
+div.style.padding = "12px";
+// div.innerText = "jawed";
+//both are correct
+let addText = document.createTextNode("jawed");
+div.appendChild(addText)
+
+document.body.appendChild(div)
