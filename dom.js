@@ -152,7 +152,7 @@ addoptiLanguage('golang');
 
 //Edit
 let secondlang = document.querySelector("li:nth-child(2)");
-// secondlang.innerHTML = "Mojo";
+secondlang.innerHTML = "Mojo";
 let newLi = document.createElement("li");
 newLi.textContent = "Mojo"
 secondlang.replaceWith(newLi);
@@ -165,3 +165,16 @@ firstlang.outerHTML = "<li>Typescript</li>"
 
 let lastLang = document.querySelector("li:last-child")
 lastLang.remove()
+
+// 26
+let ul = document.querySelector("ul");
+let li = document.createElement("li")
+li.innerHTML = "<li>New Task</li>"
+ul.appendChild(li);
+
+// 27
+let img = document.createElement("img");
+img.setAttribute("src", "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+let div = document.querySelector("div").prepend(img)
+
+
