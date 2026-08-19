@@ -47,5 +47,32 @@
 // 10
 let firstPara = document.querySelector(".text");
 
+// 11
+let body = document.querySelector("body");
+let heading = document.createElement("h2");
+heading.textContent = "Welcome to JavaScript";
+body.appendChild(heading);
+
+// 12
+let ul = document.querySelector("ul");
+let li = document.createElement("li");
+li.innerHTML = "<li>JavaScript</li>";
+ul.appendChild(li);
+
+// 13
+let p = document.querySelector("p");
+p.remove()
+
+// 14
+let id = document.querySelector("#title");
+id.classList = "heading";
+console.log(id)
+
+// 15
+let h1 = document.querySelector("h1");
+h1.classList.remove("heading");
+
+
+
 
 
