@@ -45,32 +45,48 @@
 // console.log(message)
 
 // 10
-let firstPara = document.querySelector(".text");
+// let firstPara = document.querySelector(".text");
 
 // 11
-let body = document.querySelector("body");
-let heading = document.createElement("h2");
-heading.textContent = "Welcome to JavaScript";
-body.appendChild(heading);
+// let body = document.querySelector("body");
+// let heading = document.createElement("h2");
+// heading.textContent = "Welcome to JavaScript";
+// body.appendChild(heading);
 
 // 12
-let ul = document.querySelector("ul");
-let li = document.createElement("li");
-li.innerHTML = "<li>JavaScript</li>";
-ul.appendChild(li);
+// let ul = document.querySelector("ul");
+// let li = document.createElement("li");
+// li.innerHTML = "<li>JavaScript</li>";
+// ul.appendChild(li);
 
 // 13
-let p = document.querySelector("p");
-p.remove()
+// let p = document.querySelector("p");
+// p.remove()
 
 // 14
-let id = document.querySelector("#title");
-id.classList = "heading";
-console.log(id)
+// let id = document.querySelector("#title");
+// id.classList = "heading";
+// console.log(id)
 
 // 15
-let h1 = document.querySelector("h1");
-h1.classList.remove("heading");
+// let h1 = document.querySelector("h1");
+// h1.classList.remove("heading");
+
+// 16
+let boxh2 = document.querySelector("#box h2");
+boxh2.textContent = "Javascript Student";
+let para = document.createElement("p")
+para.textContent = "Learning DOM"
+box.appendChild(para);
+let skills = document.querySelector("#skills");
+let li = document.createElement("li");
+li.textContent = "JavaScript";
+skills.appendChild(li);
+li.setAttribute("class", "highlight");
+console.log(box);
+console.log(skills);
+
+
 
 
 
