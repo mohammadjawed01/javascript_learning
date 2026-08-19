@@ -23,6 +23,29 @@
 // let img = document.getElementById("photo");
 // img.getAttribute("src")
 
+// 6
+// let img = document.querySelector("#photo");
+// img.setAttribute("src", "new.jpg");
+
+// // 7
+// let link = document.querySelector("#link");
+// link.setAttribute("href", "new.html");
+
+// 8
+// let message = document.querySelectorAll(".message");
+// message.forEach(function(val){
+//     console.log(val);
+// })
+
+// 9
+// let message = document.querySelectorAll(".message");
+// message.forEach(function(val){
+//     val.textContent = "JavaScript DOM"
+// })
+// console.log(message)
+
+// 10
+let firstPara = document.querySelector(".text");
 
 
 
