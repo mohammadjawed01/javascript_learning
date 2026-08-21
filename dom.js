@@ -271,13 +271,33 @@ let div = document.querySelector("div").prepend(img)
 // }
 
 // 
-let box = document.querySelector("#box");
-let para = ["HTML", "CSS", "JavaScript"];
+// let box = document.querySelector("#box");
+// let para = ["HTML", "CSS", "JavaScript"];
 
-for (const element of para) {
-    let p = document.createElement("p");
-    p.textContent = element;
-    box.appendChild(p);
+// for (const element of para) {
+//     let p = document.createElement("p");
+//     p.textContent = element;
+//     box.appendChild(p);
+// }
+
+// 
+// let li = document.createElement('li');
+// li.textContent = "HTML";
+// let skills = document.querySelector("#skills");
+// skills.prepend(li);
+
+// 
+// let box = document.querySelector("#box");
+// box.prepend("New");
+
+// 
+let skills = document.querySelector("#skills");
+let items = ["HTML", "CSS"];
+
+for (const element of items) {
+    let li = document.createElement("li");
+    li.textContent = element;
+    skills.prepend(li)
 }
 
 
