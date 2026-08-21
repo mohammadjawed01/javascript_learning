@@ -15,8 +15,8 @@ let button = document.querySelector("button");
 console.log(button);
 
 // 5.
-let para = document.querySelector("p");
-console.log(para.textContent); 
+// let para = document.querySelector("p");
+// console.log(para.textContent); 
 
 // 6.
 let x = document.querySelector("#title2");
@@ -90,8 +90,8 @@ let button1 = document.querySelector("#btn");
 button1.removeAttribute("disabled");
 
 // 21
-let box = document.querySelector("#box");
-box.setAttribute("data-name", "student");
+// let box = document.querySelector("#box");
+// box.setAttribute("data-name", "student");
 
 // 22
 let name = document.querySelector("#name");
@@ -237,13 +237,47 @@ let div = document.querySelector("div").prepend(img)
 // }
 
 // 
+// let box = document.querySelector("#box");
+// let paras = ["One", "Two", "Three"];
+// for (const element of paras) {
+//     let p = document.createElement("p");
+//     p.textContent = element
+//     box.append(p)
+//     console.log(p)
+// }
+
+// let box = document.querySelector("#box");
+// let para = document.createElement("p");
+// para.textContent = "Hello";
+// box.appendChild(para);
+// console.log(box);
+
+//
+// let box = document.querySelector("#box");
+// box.appendChild("Hello");
+// let box =  document.querySelector("#box");
+// let heading = document.createElement("h2");
+// heading.textContent = "JavaScript DOM";
+// box.appendChild(heading);
+
+
+// 
+// let skills = document.querySelector("#skills");
+// let liitem = ["HTML", "CSS", "Javascript"];
+// for (const element of liitem) {
+//     let li = document.createElement("li")
+//     li.textContent = element
+//     skills.appendChild(li)
+// }
+
+// 
 let box = document.querySelector("#box");
-let paras = ["One", "Two", "Three"];
-for (const element of paras) {
+let para = ["HTML", "CSS", "JavaScript"];
+
+for (const element of para) {
     let p = document.createElement("p");
-    p.textContent = element
-    box.append(p)
-    console.log(p)
+    p.textContent = element;
+    box.appendChild(p);
 }
 
 
