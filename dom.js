@@ -177,4 +177,42 @@ let img = document.createElement("img");
 img.setAttribute("src", "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 let div = document.querySelector("div").prepend(img)
 
+//
+// console.log(message.className);
+
+// let box = document.querySelector("#box");
+
+// box.style.color = "red";
+// box.style.backgroundColor = "black";
+
+// console.log(box.style.color);
+// console.log(box.style.backgroundColor); 
+
+
+// let box = document.querySelector("#box");
+
+// box.classList.remove("active");
+// box.classList.add("hidden");
+
+// let text = document.querySelector("#title");
+// text.style.color = "blue"
+// text.style.backgroundColor = "yellow"
+// text.style.fontSize = "30px"
+
+// document.querySelector("#box").className = "card active"
+// console.log(box)
+
+// let box = document.querySelector("#box")
+// box.classList.add("active")
+// box.classList.add("hightlight")
+// box.classList.remove("container")
+// console.log(box)
+
+// let box = document.querySelector("#box");
+// console.log(box.classList.contains("active"))
+
+let box = document.querySelector("#box");
+box.classList.toggle("active")
+console.log(box)
+
 
