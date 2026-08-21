@@ -211,8 +211,40 @@ let div = document.querySelector("div").prepend(img)
 // let box = document.querySelector("#box");
 // console.log(box.classList.contains("active"))
 
+
+//
+// let box = document.querySelector("#box");
+// box.classList.toggle("active")
+// console.log(box)
+
+//
+// let para = document.createElement("p")
+// let para1 = document.createElement("p")
+// para.textContent = "HTML"
+// para1.textContent = "CSS"
+// let box = document.querySelector("#box");
+// box.append(para)
+// box.append(para1)
+
+// 
+// let skills = document.querySelector("#skills");
+// let skillli = ["HTML", "CSS", "JavaScript"];
+
+// for(let i = 0; i<skillli.length; i++){
+//     let li = document.createElement("li");
+//     li.textContent = skillli[i]
+//     skills.append(li)
+// }
+
+// 
 let box = document.querySelector("#box");
-box.classList.toggle("active")
-console.log(box)
+let paras = ["One", "Two", "Three"];
+for (const element of paras) {
+    let p = document.createElement("p");
+    p.textContent = element
+    box.append(p)
+    console.log(p)
+}
+
 
 
