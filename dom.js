@@ -314,13 +314,38 @@
 // box.before(h2, text);
 
 // 
+// let box = document.querySelector("#box");
+// let h2 = document.createElement("h2")
+// let p = document.createElement("p")
+
+// h2.textContent = "JavaScript";
+// p.textContent = "Learning DOM";
+
+// box.before(h2, p)
+
+// 
+// let box = document.querySelector("#box");
+// let h2 = document.createElement("h2");
+// h2.textContent = "JavaScript DOM";
+
+// box.after(h2);
+
+// 
+// let box = document.querySelector("#box");
+// let h2 = document.createElement("h2");
+// let p = document.createElement("P");
+// h2.textContent = "JavaScript";
+// p.textContent = "Learning DOM";
+
+// box.after(h2,p);
+
+// 
 let box = document.querySelector("#box");
-let h2 = document.createElement("h2")
-let p = document.createElement("p")
-
+let h2 = document.createElement("h2");
+let p1 = document.createElement("P");
+let p2 = document.createElement("P");
 h2.textContent = "JavaScript";
-p.textContent = "Learning DOM";
+p1.textContent = "Learning DOM";
+p2.textContent = "Practice";
 
-box.before(h2, p)
-
-
+box.after(h2,p1,p2);
