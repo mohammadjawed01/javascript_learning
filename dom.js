@@ -340,12 +340,39 @@
 // box.after(h2,p);
 
 // 
-let box = document.querySelector("#box");
-let h2 = document.createElement("h2");
-let p1 = document.createElement("P");
-let p2 = document.createElement("P");
-h2.textContent = "JavaScript";
-p1.textContent = "Learning DOM";
-p2.textContent = "Practice";
+// let box = document.querySelector("#box");
+// let h2 = document.createElement("h2");
+// let p1 = document.createElement("P");
+// let p2 = document.createElement("P");
+// h2.textContent = "JavaScript";
+// p1.textContent = "Learning DOM";
+// p2.textContent = "Practice";
 
-box.after(h2,p1,p2);
+// box.after(h2,p1,p2);
+
+// 
+// let second = document.querySelector("#second");
+// second.remove();
+
+// 
+// let two = document.querySelector("#two");
+// two.remove();
+// console.log(box);
+
+// 
+// let para = document.querySelector("#para");
+// para.remove();
+// para.remove();
+
+// 
+// let li = document.querySelectorAll(".remove");
+// console.log(li)
+// li.forEach(function(val){
+//     val.remove()
+// })
+
+// 
+let p = document.querySelectorAll(".delete");
+p.forEach(function (val){
+    val.remove()
+})
