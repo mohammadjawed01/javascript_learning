@@ -372,7 +372,33 @@
 // })
 
 // 
-let p = document.querySelectorAll(".delete");
-p.forEach(function (val){
-    val.remove()
-})
+// let p = document.querySelectorAll(".delete");
+// p.forEach(function (val){
+//     val.remove()
+// })
+
+// 
+// let box = document.querySelector("#para");
+// console.log(box.parentElement)
+
+// let para = document.querySelector("#para");
+
+// 
+// let para = document.querySelector("#para"); 
+// let parent = para.parentElement;
+// console.log(parent.parentElement);
+
+// 
+// let para = document.querySelector("#para");
+// let parent = para.parentElement;
+// let container = parent.parentElement;
+// console.log(container)
+
+// 
+// let para = document.querySelector("#para");
+// console.log(para.parentElement.parentElement);
+
+// 
+let para = document.querySelector("#para");
+let main = para.parentElement.parentElement.parentElement;
+console.log(main)
