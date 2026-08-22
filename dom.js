@@ -1,75 +1,75 @@
 // 1.
-let heading1 = document.querySelector("h1");
-console.log(heading1);
+// let heading1 = document.querySelector("h1");
+// console.log(heading1);
 
 // 2.
-let message1 = document.querySelector(".message1");
-console.log(message1);
+// let message1 = document.querySelector(".message1");
+// console.log(message1);
 
 // 3.
-let title1 = document.querySelector("#title1");
-console.log(title1.textContent); 
+// let title1 = document.querySelector("#title1");
+// console.log(title1.textContent); 
 
 // 4.
-let button = document.querySelector("button");
-console.log(button);
+// let button = document.querySelector("button");
+// console.log(button);
 
 // 5.
 // let para = document.querySelector("p");
 // console.log(para.textContent); 
 
 // 6.
-let x = document.querySelector("#title2");
-console.log(x);
-console.log(x.textContent);
+// let x = document.querySelector("#title2");
+// console.log(x);
+// console.log(x.textContent);
 
 // 7.
-let title3 = document.getElementById("title3");
-console.log(title3.textContent);
+// let title3 = document.getElementById("title3");
+// console.log(title3.textContent);
 
 // 8.
-let message2 = document.querySelectorAll(".message2");
-console.log(message2);
+// let message2 = document.querySelectorAll(".message2");
+// console.log(message2);
 
 // 9.
-let item = document.getElementsByClassName("item");
-console.log(item[1].textContent);
+// let item = document.getElementsByClassName("item");
+// console.log(item[1].textContent);
 
 // 10.
-let heading2 = document.getElementsByTagName("h2");
-console.log(heading2[2].textContent);
+// let heading2 = document.getElementsByTagName("h2");
+// console.log(heading2[2].textContent);
 
 // 11.
-let paragraph = document.querySelector("p");
-paragraph.textContent = "first paragraph";
+// let paragraph = document.querySelector("p");
+// paragraph.textContent = "first paragraph";
 
 // 12.
-let title4 = document.querySelector("#title4");
-title4.textContent = "Welcome Mohammad";
-console.log(title4);
+// let title4 = document.querySelector("#title4");
+// title4.textContent = "Welcome Mohammad";
+// console.log(title4);
 
 // 13.
-let message3 = document.querySelector("#message3")
-message3.innerText = "New Message";
-console.log(message3);
+// let message3 = document.querySelector("#message3")
+// message3.innerText = "New Message";
+// console.log(message3);
 
 // 14.
-let box1 = document.querySelector("#box1");
-box1.innerHTML = "<h2>JavaScript</h2>";
-console.log(box1);
+// let box1 = document.querySelector("#box1");
+// box1.innerHTML = "<h2>JavaScript</h2>";
+// console.log(box1);
 
 // 15
-let box2 = document.querySelector("#box2");
-box2.innerHTML = `
-    <h1>New</h1>
-    <p>JavaScript</p>
-`;
-console.log(box2);
+// let box2 = document.querySelector("#box2");
+// box2.innerHTML = `
+//     <h1>New</h1>
+//     <p>JavaScript</p>
+// `;
+// console.log(box2);
 
 // 16
-let message4 = document.querySelector("#message");
-message4.innerHTML = "<h1>Hello</h1>";
-console.log(message4);
+// let message4 = document.querySelector("#message");
+// message4.innerHTML = "<h1>Hello</h1>";
+// console.log(message4);
 
 // 17
 // let image = document.querySelector("#photo");
@@ -77,105 +77,105 @@ console.log(message4);
 // console.log(image.getAttribute("src"));
 
 // 18
-let link = document.querySelector("#link");
-console.log(link.getAttribute("href"));
+// let link = document.querySelector("#link");
+// console.log(link.getAttribute("href"));
 
 // 19
-let message= document.querySelector("#message");
-message.setAttribute("class", "highlight");
-console.log(message.getAttribute("class"));
+// let message= document.querySelector("#message");
+// message.setAttribute("class", "highlight");
+// console.log(message.getAttribute("class"));
 
 // 20
-let button1 = document.querySelector("#btn");
-button1.removeAttribute("disabled");
+// let button1 = document.querySelector("#btn");
+// button1.removeAttribute("disabled");
 
 // 21
 // let box = document.querySelector("#box");
 // box.setAttribute("data-name", "student");
 
 // 22
-let name = document.querySelector("#name");
-name.setAttribute("placeholder", "Enter your name");
+// let name = document.querySelector("#name");
+// name.setAttribute("placeholder", "Enter your name");
 
 // 23
-let parent = document.querySelector(".parent");
-console.log(parent);
-console.log(parent.children);
-console.log(parent.children[1].innerHTML);
+// let parent = document.querySelector(".parent");
+// console.log(parent);
+// console.log(parent.children);
+// console.log(parent.children[1].innerHTML);
 
-for (let i = 0; i < parent.children.length; i++) {
-    console.log(parent.children[i].innerHTML);
-}
+// for (let i = 0; i < parent.children.length; i++) {
+//     console.log(parent.children[i].innerHTML);
+// }
 
-parent.children[1].style.color = 'orange';
+// parent.children[1].style.color = 'orange';
 
-console.log(parent.firstElementChild);
-console.log(parent.lastElementChild);
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
 
-let dayOne = document.querySelector(".day")
-console.log(dayOne.parentElement);
-console.log(dayOne.nextElementSibling);
+// let dayOne = document.querySelector(".day")
+// console.log(dayOne.parentElement);
+// console.log(dayOne.nextElementSibling);
 
-console.log("NODES: ", parent.childNodes);
+// console.log("NODES: ", parent.childNodes);
 
 // 24
-let div = document.createElement('div')
-console.log(div);
-div.className = "main";
-div.id = Math.round(Math.random() * 10 + 1);
+// let div = document.createElement('div')
+// console.log(div);
+// div.className = "main";
+// div.id = Math.round(Math.random() * 10 + 1);
 
-div.setAttribute("Title", "generated title");
-div.style.backgroundColor = "green";
-div.style.padding = "12px";
+// div.setAttribute("Title", "generated title");
+// div.style.backgroundColor = "green";
+// div.style.padding = "12px";
 // div.innerText = "jawed";
 //both are correct
-let addText = document.createTextNode("jawed");
-div.appendChild(addText)
+// let addText = document.createTextNode("jawed");
+// div.appendChild(addText)
 
-document.body.appendChild(div)
+// document.body.appendChild(div)
 
 // 25
-function addLanguage(langName){
-    let li = document.createElement('li');
-    li.innerHTML = `${langName}`
-    document.querySelector(".language").appendChild(li);
-}
-addLanguage("python");
-addLanguage("typescript");
+// function addLanguage(langName){
+//     let li = document.createElement('li');
+//     li.innerHTML = `${langName}`
+//     document.querySelector(".language").appendChild(li);
+// }
+// addLanguage("python");
+// addLanguage("typescript");
 
-function addoptiLanguage(LangName) {
-    let li = document.createElement("li");
-    li.appendChild(document.createTextNode(LangName));
-    document.querySelector(".language").appendChild(li);
-}
-addoptiLanguage('golang');
+// function addoptiLanguage(LangName) {
+//     let li = document.createElement("li");
+//     li.appendChild(document.createTextNode(LangName));
+//     document.querySelector(".language").appendChild(li);
+// }
+// addoptiLanguage('golang');
 
 //Edit
-let secondlang = document.querySelector("li:nth-child(2)");
-secondlang.innerHTML = "Mojo";
-let newLi = document.createElement("li");
-newLi.textContent = "Mojo"
-secondlang.replaceWith(newLi);
+// let secondlang = document.querySelector("li:nth-child(2)");
+// secondlang.innerHTML = "Mojo";
+// let newLi = document.createElement("li");
+// newLi.textContent = "Mojo"
+// secondlang.replaceWith(newLi);
 
 //edit
-let firstlang = document.querySelector("li:first-child");
-firstlang.outerHTML = "<li>Typescript</li>"
+// let firstlang = document.querySelector("li:first-child");
+// firstlang.outerHTML = "<li>Typescript</li>"
 
 //remove
 
-let lastLang = document.querySelector("li:last-child")
-lastLang.remove()
+// let lastLang = document.querySelector("li:last-child")
+// lastLang.remove()
 
 // 26
-let ul = document.querySelector("ul");
-let li = document.createElement("li")
-li.innerHTML = "<li>New Task</li>"
-ul.appendChild(li);
+// let ul = document.querySelector("ul");
+// let li = document.createElement("li")
+// li.innerHTML = "<li>New Task</li>"
+// ul.appendChild(li);
 
 // 27
-let img = document.createElement("img");
-img.setAttribute("src", "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-let div = document.querySelector("div").prepend(img)
+// let img = document.createElement("img");
+// img.setAttribute("src", "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+// let div = document.querySelector("div").prepend(img)
 
 //
 // console.log(message.className);
@@ -291,14 +291,36 @@ let div = document.querySelector("div").prepend(img)
 // box.prepend("New");
 
 // 
-let skills = document.querySelector("#skills");
-let items = ["HTML", "CSS"];
+// let skills = document.querySelector("#skills");
+// let items = ["HTML", "CSS"];
 
-for (const element of items) {
-    let li = document.createElement("li");
-    li.textContent = element;
-    skills.prepend(li)
-}
+// for (const element of items) {
+//     let li = document.createElement("li");
+//     li.textContent = element;
+//     skills.prepend(li)
+// }
 
+// 
+// let box = document.querySelector("#box");
+// let heading = document.createElement("h2");
+// heading.textContent = "JavaScript DOM";
+// box.before(heading);
+
+// 
+// let box = document.querySelector("#box");
+// let h2 = document.createElement("h2");
+// h2.textContent = "Heading";
+// let text = "Welcome";
+// box.before(h2, text);
+
+// 
+let box = document.querySelector("#box");
+let h2 = document.createElement("h2")
+let p = document.createElement("p")
+
+h2.textContent = "JavaScript";
+p.textContent = "Learning DOM";
+
+box.before(h2, p)
 
 
