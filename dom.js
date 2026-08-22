@@ -399,6 +399,31 @@
 // console.log(para.parentElement.parentElement);
 
 // 
-let para = document.querySelector("#para");
-let main = para.parentElement.parentElement.parentElement;
-console.log(main)
+// let para = document.querySelector("#para");
+// let main = para.parentElement.parentElement.parentElement;
+// console.log(main)
+
+// 
+// let box =  document.querySelector("#box");
+// let first = box.children[0];
+// console.log(first);
+
+// 
+// let box = document.querySelector("#box");
+// let last = box.children[2];
+// console.log(last)
+
+// 
+// let boxs = document.querySelector("#box");
+// // let all = boxs.children;
+// for (const element of boxs.children) {
+//     console.log(element)
+// }
+
+// 
+let box = document.querySelector("#box");
+let all = box.children;
+for (let child of all) {
+    child.textContent ="Learning"
+    console.log(child)
+}
