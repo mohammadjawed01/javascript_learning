@@ -421,9 +421,34 @@
 // }
 
 // 
+// let box = document.querySelector("#box");
+// let all = box.children;
+// for (let child of all) {
+//     child.textContent ="Learning"
+//     console.log(child)
+// }
+
+// 
+// let skills = document.querySelector("#skills");
+// let first = skills.firstElementChild;
+// first.textContent = "Frontend"
+// console.log(first)
+
+// 
+// let box = document.querySelector("#box");
+// let first = box.firstElementChild;
+// first.remove();
+// console.log(box)
+
+// 
+// let box = document.querySelector("#box");
+// let first = box.firstElementChild;
+// first.textContent =  "JavaScript DOM"
+
+
+// 
 let box = document.querySelector("#box");
-let all = box.children;
-for (let child of all) {
-    child.textContent ="Learning"
-    console.log(child)
-}
+let first = box.firstElementChild;
+first.textContent = "JavaScript DOM"
+let second = box.children[1];
+second.remove();
