@@ -447,8 +447,25 @@
 
 
 // 
+// let box = document.querySelector("#box");
+// let first = box.firstElementChild;
+// first.textContent = "JavaScript DOM"
+// let second = box.children[1];
+// second.remove();
+
+// 
+// let skills = document.querySelector("#skills");
+// let last = skills.lastElementChild;
+// last.textContent = "React";
+
+// 
+// let box = document.querySelector("#box");
+// let last = box.lastElementChild;
+// last.remove()
+
+// 
 let box = document.querySelector("#box");
+let last = box.lastElementChild;
+last.textContent = "JavaScript";
 let first = box.firstElementChild;
-first.textContent = "JavaScript DOM"
-let second = box.children[1];
-second.remove();
+first.remove()
