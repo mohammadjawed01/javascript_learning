@@ -572,11 +572,42 @@
 //     console.log(node.nodeType)
 // }
 
+// 
+// let box = document.querySelector("#box");
+// let nodes = box.childNodes;
+// for (const node of nodes) {
+//     if(node.nodeType === 1){
+//         console.log("Element")
+//     }
+//     else if(node.nodeType === 3){
+//         console.log("Text")
+//     }
+// }
+
+// 
+// let box = document.querySelector("#box");
+// let first = box.firstElementChild;
+// console.log(first.nodeName)
+
+// 
+// let box = document.querySelector("#box");
+// let first = box.children;
+// for (const node of first) {
+//     console.log(node.nodeName)
+// }
+
+// 
+// let box = document.querySelector("#box");
+// let last = box.lastElementChild;
+// console.log(last.nodeName)
+// console.log(last.nodeType)
+
+// 
 let box = document.querySelector("#box");
 let nodes = box.childNodes;
 for (const node of nodes) {
     if(node.nodeType === 1){
-        console.log("Element")
+        console.log(`Element ${node.nodeName}`)
     }
     else if(node.nodeType === 3){
         console.log("Text")
