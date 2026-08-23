@@ -509,7 +509,24 @@
 // previous.textContent = "JavaScript";
 
 // 
-let four = document.querySelector("#four");
-let previous = four.previousElementSibling;
-previous.textContent = "JavaScript";
-previous.previousElementSibling.remove()
+// let four = document.querySelector("#four");
+// let previous = four.previousElementSibling;
+// previous.textContent = "JavaScript";
+// previous.previousElementSibling.remove()
+
+// 
+// let text  = document.querySelector("#text");
+// let container = text.closest(".container");
+// container.textContent = "JavaScript DOM";
+// console.log(container);
+
+
+// 
+// let text = document.querySelector("#text");
+// let section  = text.closest(".section")
+// console.log(section)
+
+// 
+let text = document.querySelector("#text");
+let container = text.closest(".section").closest(".container");
+console.log(container)
