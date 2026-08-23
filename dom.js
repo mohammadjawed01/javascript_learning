@@ -549,8 +549,36 @@
 // }
 
 // 
+// let bo
+
+// 
+// let box = document.querySelector("#box");
+// console.log(box.firstChild.nodeType);
+
+// 
+// let box  = document.querySelector("#box");
+// let first = box.firstElementChild;
+// console.log(first.nodeType)
+
+// 
+// let box = document.querySelector("#box");
+// let first = box.firstChild;
+// console.log(first.nodeType)
+
+// 
+// let box = document.querySelector("#box");
+// let ele = box.children;
+// for (const node of ele) {
+//     console.log(node.nodeType)
+// }
+
 let box = document.querySelector("#box");
-let childs = box.children;
-for (const child of childs) {
-    child.textContent = "Learning"
+let nodes = box.childNodes;
+for (const node of nodes) {
+    if(node.nodeType === 1){
+        console.log("Element")
+    }
+    else if(node.nodeType === 3){
+        console.log("Text")
+    }
 }
