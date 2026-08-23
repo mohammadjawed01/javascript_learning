@@ -464,8 +464,30 @@
 // last.remove()
 
 // 
-let box = document.querySelector("#box");
-let last = box.lastElementChild;
-last.textContent = "JavaScript";
-let first = box.firstElementChild;
-first.remove()
+// let box = document.querySelector("#box");
+// let last = box.lastElementChild;
+// last.textContent = "JavaScript";
+// let first = box.firstElementChild;
+// first.remove()
+
+// 
+// let one = document.querySelector("#one");
+// let next = one.nextElementSibling;
+// next.textContent = "JavaScript";
+
+
+// 
+// let two = document.querySelector("#two");
+// let next = two.nextElementSibling;
+// next.remove()
+
+// 
+// let one  = document.querySelector("#one");
+// let next = one.nextElementSibling.nextElementSibling;
+// next.textContent = "JavaScript"
+
+// 
+let one = document.querySelector("#one");
+let next = one.nextElementSibling;
+next.textContent = "JavaScript"
+next.nextElementSibling.remove();
