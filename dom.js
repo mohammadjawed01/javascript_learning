@@ -487,7 +487,29 @@
 // next.textContent = "JavaScript"
 
 // 
-let one = document.querySelector("#one");
-let next = one.nextElementSibling;
-next.textContent = "JavaScript"
-next.nextElementSibling.remove();
+// let one = document.querySelector("#one");
+// let next = one.nextElementSibling;
+// next.textContent = "JavaScript"
+// next.nextElementSibling.remove();
+
+
+// 
+// let three = document.querySelector("#three");
+// let prevoius = three.previousElementSibling;
+// prevoius.textContent = "JavaScript";
+
+// 
+// let three = document.querySelector("#three");
+// let previous = three.previousElementSibling;
+// previous.remove()
+
+// 
+// let four = document.querySelector("#four");
+// let previous = four.previousElementSibling.previousElementSibling;
+// previous.textContent = "JavaScript";
+
+// 
+let four = document.querySelector("#four");
+let previous = four.previousElementSibling;
+previous.textContent = "JavaScript";
+previous.previousElementSibling.remove()
