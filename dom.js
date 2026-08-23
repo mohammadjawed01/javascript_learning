@@ -527,6 +527,30 @@
 // console.log(section)
 
 // 
-let text = document.querySelector("#text");
-let container = text.closest(".section").closest(".container");
-console.log(container)
+// let text = document.querySelector("#text");
+// let container = text.closest(".section").closest(".container");
+// console.log(container)
+
+// 
+// let box = document.querySelector("#box");
+// let nodes = box.childNodes;
+// console.log(nodes)
+
+// 
+// let box = document.querySelector("#box");
+// let nodes = box.childNodes;
+// console.log(nodes[0]);
+
+// 
+// let box = document.querySelector("#box");
+// let childs = box.children;
+// for (const child of childs) {
+//     console.log(child.textContent)
+// }
+
+// 
+let box = document.querySelector("#box");
+let childs = box.children;
+for (const child of childs) {
+    child.textContent = "Learning"
+}
