@@ -13,7 +13,24 @@
 // })
 
 // 2
+// let btn = document.querySelector("#btn");
+// btn.addEventListener('click', function(){
+//     console.log("Button Clicked")
+// })
+
+
+//-------------------------------------ONCLICK-----------------------------------
+
+// 1.
+// let btn = document.querySelector("#btn");
+// btn.onclick = function(){
+//     alert("button clicked")
+// }
+
+// 2.
 let btn = document.querySelector("#btn");
-btn.addEventListener('click', function(){
-    console.log("Button Clicked")
-})
+function handleClick(){
+    console.log("button clicked")
+}
+// btn.onclick = handleClick(); this execute the function write now 
+btn.onclick = handleClick;
