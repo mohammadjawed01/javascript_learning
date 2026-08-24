@@ -88,10 +88,43 @@
 // })
 
 // 8.
+// let btn = document.querySelector("#btn");
+// let count = document.querySelector("#count");
+// let number = 0;
+// btn.addEventListener('click', function(){
+//     number++;
+//     count.textContent = number;
+// })
+
+// 9.
+// let box = document.querySelector("#box");
+// box.addEventListener('mouseenter', function(){
+//     console.log("Mouse entered")
+// })
+
+// 10.
+// let btn = document.querySelector("#btn");
+// btn.addEventListener('dblclick', function(){
+//     console.log("Double Clicked!")
+// })
+
+// 11.
+// let box = document.querySelector("#box");
+// box.addEventListener('mouseenter', function(){
+//     console.log("Mouse entered")
+// })
+// box.addEventListener('mouseleave', function(){
+//     console.log("Mouse leaved")
+// })
+
+// 12.
 let btn = document.querySelector("#btn");
-let count = document.querySelector("#count");
-let number = 0;
-btn.addEventListener('click', function(){
-    number++;
-    count.textContent = number;
-})
+btn.addEventListener("mousedown", function () {
+    console.log("A");
+});
+btn.addEventListener("mouseup", function () {
+    console.log("B");
+});
+btn.addEventListener("click", function () {
+    console.log("C");
+});
