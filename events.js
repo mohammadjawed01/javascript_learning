@@ -164,9 +164,67 @@
 // })
 
 // 19
-let search = document.querySelector("input");
-search.addEventListener("keydown", function(event){
-    if(event.key === "Enter"){
-        console.log("search")
+// let search = document.querySelector("input");
+// search.addEventListener("keydown", function(event){
+//     if(event.key === "Enter"){
+//         console.log("search")
+//     }
+// })
+
+// 20
+document.addEventListener("keydown", function (event) {
+    // console.log(event.shiftKey)
+})
+
+// 21
+document.addEventListener("keydown", function (event) {
+    // console.log(event.ctrlKey)
+})
+
+// 22
+document.addEventListener("keydown", function (event) {
+    // console.log(event.altKey)
+})
+
+// 23
+document.addEventListener("keydown", function (event) {
+    // console.log(event.metaKey)
+})
+
+//24
+document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && event.key === "s") {
+        console.log("ctrl + s")
+    }
+    else if (event.ctrlKey && event.key === "Enter") {
+        console.log("ctrl + enter")
+    }
+    else if (event.altKey && event.key === "Enter") {
+        console.log("alt + enter")
+    }
+
+    else if (event.shiftKey && event.key === "a") {
+        console.log("shift + A")
     }
 })
+
+// 25
+document.addEventListener("keydown", function (event) {
+    if (event.shiftKey && event.key === "a") {
+        console.log("shift pressed")
+    }
+});
+
+// 26
+document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && event.key === "s") {
+        console.log("ctrl + s pressed")
+    }
+});
+
+// 27
+document.addEventListener("keydown", function (event) {
+if (event.altKey && event.key === "Enter") {
+        console.log("Alt + Enter pressed")
+    }
+});
