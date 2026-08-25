@@ -192,39 +192,78 @@ document.addEventListener("keydown", function (event) {
 })
 
 //24
-document.addEventListener("keydown", function (event) {
-    if (event.ctrlKey && event.key === "s") {
-        console.log("ctrl + s")
-    }
-    else if (event.ctrlKey && event.key === "Enter") {
-        console.log("ctrl + enter")
-    }
-    else if (event.altKey && event.key === "Enter") {
-        console.log("alt + enter")
-    }
+// document.addEventListener("keydown", function (event) {
+//     if (event.ctrlKey && event.key === "s") {
+//         console.log("ctrl + s")
+//     }
+//     else if (event.ctrlKey && event.key === "Enter") {
+//         console.log("ctrl + enter")
+//     }
+//     else if (event.altKey && event.key === "Enter") {
+//         console.log("alt + enter")
+//     }
 
-    else if (event.shiftKey && event.key === "a") {
-        console.log("shift + A")
-    }
-})
+//     else if (event.shiftKey && event.key === "a") {
+//         console.log("shift + A")
+//     }
+// })
 
 // 25
-document.addEventListener("keydown", function (event) {
-    if (event.shiftKey && event.key === "a") {
-        console.log("shift pressed")
-    }
-});
+// document.addEventListener("keydown", function (event) {
+//     if (event.shiftKey && event.key === "a") {
+//         console.log("shift pressed")
+//     }
+// });
 
 // 26
-document.addEventListener("keydown", function (event) {
-    if (event.ctrlKey && event.key === "s") {
-        console.log("ctrl + s pressed")
-    }
-});
+// document.addEventListener("keydown", function (event) {
+//     if (event.ctrlKey && event.key === "s") {
+//         console.log("ctrl + s pressed")
+//     }
+// });
 
 // 27
-document.addEventListener("keydown", function (event) {
-if (event.altKey && event.key === "Enter") {
-        console.log("Alt + Enter pressed")
-    }
-});
+// document.addEventListener("keydown", function (event) {
+// if (event.altKey && event.key === "Enter") {
+//         console.log("Alt + Enter pressed")
+//     }
+// });
+
+// ------------------preventDefault-----------------------
+
+//28
+// let link = document.querySelector("#link");
+// link.addEventListener('click', function(event){
+//     event.preventDefault();
+//     console.log("link clicked")
+// })
+
+// 29
+// let form =  document.querySelector("#form");
+// form.addEventListener('click', function(event){
+//     event.preventDefault();
+//     console.log("form subnmission stopped")
+// })
+
+// 30
+let link = document.querySelector("#link");
+link.addEventListener('click', function(event){
+    event.preventDefault();
+    console.log("Navigation prevented");
+})
+
+// 31
+let form = document.querySelector("#form");
+let button = document.querySelector("button")
+button.addEventListener('click', function(event){
+    event.preventDefault();
+    console.log("Form submitted using JavaScript");
+})
+
+// 32
+let btn  = document.querySelector("#btn");
+btn.addEventListener('click', function(event){
+    event.preventDefault();
+    console.log("Button action controlled");
+})
+
