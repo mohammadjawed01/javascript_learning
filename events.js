@@ -118,13 +118,55 @@
 // })
 
 // 12.
-let btn = document.querySelector("#btn");
-btn.addEventListener("mousedown", function () {
-    console.log("A");
-});
-btn.addEventListener("mouseup", function () {
-    console.log("B");
-});
-btn.addEventListener("click", function () {
-    console.log("C");
-});
+// let btn = document.querySelector("#btn");
+// btn.addEventListener("mousedown", function () {
+//     console.log("A");
+// });
+// btn.addEventListener("mouseup", function () {
+//     console.log("B");
+// });
+// btn.addEventListener("click", function () {
+//     console.log("C");
+// });
+
+// -------------------------KeyboardEvent---------------------
+//13
+// document.addEventListener("keydown", function () {
+//     console.log("Key pressed");
+// });
+
+//14
+// document.addEventListener("keyup", function () {
+//     console.log("Key released");
+// });
+
+// 15
+// let input = document.querySelector("input");
+// input.addEventListener('keydown', function(){
+//     console.log("key pressed inside input")
+// })
+
+//16
+// document.addEventListener('keydown', function (event) {
+//     console.log(event.key);
+// });
+
+// 17
+// document.addEventListener('keydown', function (event) {
+//     console.log(event.code);
+// });
+
+// 18
+// document.addEventListener("keydown", function(event){
+//     if(event.key === "ArrowUp"){
+//         console.log("Move  up")
+//     }
+// })
+
+// 19
+let search = document.querySelector("input");
+search.addEventListener("keydown", function(event){
+    if(event.key === "Enter"){
+        console.log("search")
+    }
+})
