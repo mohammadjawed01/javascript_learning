@@ -261,11 +261,11 @@ button.addEventListener('click', function(event){
 })
 
 // 32
-let btn  = document.querySelector("#btn");
-btn.addEventListener('click', function(event){
-    event.preventDefault();
-    console.log("Button action controlled");
-})
+// let btn  = document.querySelector("#btn");
+// btn.addEventListener('click', function(event){
+//     event.preventDefault();
+//     console.log("Button action controlled");
+// })
 
 // -------event propogation bubbling and capturing-------
 // 32
@@ -342,17 +342,17 @@ skills.addEventListener('click', function(event){
 // })
 
 //39
-let box = document.querySelector("#box");
-box.addEventListener('click', function(event){
-    // console.log(event.target);
-    console.log(event.currentTarget);
-})
+// let box = document.querySelector("#box");
+// box.addEventListener('click', function(event){
+//     console.log(event.target);
+//     console.log(event.currentTarget);
+// })
 
 // 40.
-let buttons = document.querySelector("#buttons");
-buttons.addEventListener('click', function() {
-    console.log("Button clicked")
-})
+// let buttons = document.querySelector("#buttons");
+// buttons.addEventListener('click', function() {
+//     console.log("Button clicked")
+// })
 
 // 41
 let tasks = document.querySelector("#tasks");
@@ -361,3 +361,31 @@ tasks.addEventListener('click', function(event){
         event.target.parentElement.remove()
     }
 })
+
+// -----------------remove Elements---------------------
+//42
+// let btn = document.querySelector("#btn");
+// function handleClick(){
+//     console.log("Button clicked")
+// }
+// btn.addEventListener('click', handleClick);
+// btn.removeEventListener('click', handleClick);
+
+// 43
+let btn = document.querySelector("#btn");
+function firstHandler(){
+    console.log("First Handler")
+}
+function secondHandler(){
+    console.log("Second Handler")
+}
+btn.addEventListener('click', firstHandler);
+btn.addEventListener('click', secondHandler);
+btn.removeEventListener('click', firstHandler);
+
+// 44
+function handleKeydown(event) {
+    console.log("key pressed");
+}
+document.addEventListener("keydown", handleKeydown);
+document.removeEventListener("keydown", handleKeydown);
