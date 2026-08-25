@@ -267,3 +267,63 @@ btn.addEventListener('click', function(event){
     console.log("Button action controlled");
 })
 
+// -------event propogation bubbling and capturing-------
+// 32
+// let grandparent = document.querySelector("#grandparent");
+// let parent = document.querySelector("#parent");
+// let child = document.querySelector("#child");
+
+// grandparent.addEventListener('click', function(){
+//     console.log("Grandparent")
+// })
+// parent.addEventListener('click', function(){
+//     console.log("Parent")
+// })
+// child.addEventListener('click', function(){
+//     console.log("Child")
+// })
+
+// 33
+// let parent = document.querySelector("#parent");
+// let child = document.querySelector("#child");
+// parent.addEventListener('click', function(){
+//     console.log("Parent")
+// }, true)
+// child.addEventListener('click', function(){
+//     console.log("Child")
+// })
+
+//34
+// let parent = document.querySelector("#parent");
+// let child = document.querySelector("#child");
+// parent.addEventListener('click', function(){
+//     console.log("parent")
+// })
+// child.addEventListener('click', function(event){
+//     console.log("Child clicked");
+//     event.stopPropagation();
+// })
+
+// 35
+// let grandparent = document.querySelector("#grandparent");
+// let parent = document.querySelector("#parent");
+// let child = document.querySelector("#child");
+// grandparent.addEventListener('click', function(){
+//     console.log("grandparent")
+// })
+// parent.addEventListener('click', function(){
+//     console.log("parent");
+// })
+// child.addEventListener('click', function(){
+//     console.log("Child");
+// })
+
+// 36
+let parent = document.querySelector("#parent");
+let child = document.querySelector("#child");
+parent.addEventListener('click', function(){
+    console.log("parent");
+}, true)
+child.addEventListener('click', function(){
+    console.log("Child");
+})
