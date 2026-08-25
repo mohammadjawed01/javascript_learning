@@ -319,11 +319,45 @@ btn.addEventListener('click', function(event){
 // })
 
 // 36
-let parent = document.querySelector("#parent");
-let child = document.querySelector("#child");
-parent.addEventListener('click', function(){
-    console.log("parent");
-}, true)
-child.addEventListener('click', function(){
-    console.log("Child");
+// let parent = document.querySelector("#parent");
+// let child = document.querySelector("#child");
+// parent.addEventListener('click', function(){
+//     console.log("parent");
+// }, true)
+// child.addEventListener('click', function(){
+//     console.log("Child");
+// })
+
+// -----------------------Event Delegation-----------------
+// 37
+let skills = document.querySelector("#skills");
+skills.addEventListener('click', function(event){
+    console.log(event.target.textContent)
+})
+
+// 38
+// let box = document.querySelector("#box");
+// box.addEventListener('click', function(event){
+//     console.log(event.target);
+// })
+
+//39
+let box = document.querySelector("#box");
+box.addEventListener('click', function(event){
+    // console.log(event.target);
+    console.log(event.currentTarget);
+})
+
+// 40.
+let buttons = document.querySelector("#buttons");
+buttons.addEventListener('click', function() {
+    console.log("Button clicked")
+})
+
+// 41
+let tasks = document.querySelector("#tasks");
+tasks.addEventListener('click', function(event){
+    if(event.target.matches("button")){
+        event.target.parentElement.remove()
+    }
 })
