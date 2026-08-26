@@ -246,19 +246,19 @@ document.addEventListener("keydown", function (event) {
 // })
 
 // 30
-let link = document.querySelector("#link");
-link.addEventListener('click', function(event){
-    event.preventDefault();
-    console.log("Navigation prevented");
-})
+// let link = document.querySelector("#link");
+// link.addEventListener('click', function(event){
+//     event.preventDefault();
+//     console.log("Navigation prevented");
+// })
 
 // 31
-let form = document.querySelector("#form");
-let button = document.querySelector("button")
-button.addEventListener('click', function(event){
-    event.preventDefault();
-    console.log("Form submitted using JavaScript");
-})
+// let form = document.querySelector("#form");
+// let button = document.querySelector("button")
+// button.addEventListener('click', function(event){
+//     event.preventDefault();
+//     console.log("Form submitted using JavaScript");
+// })
 
 // 32
 // let btn  = document.querySelector("#btn");
@@ -330,10 +330,10 @@ button.addEventListener('click', function(event){
 
 // -----------------------Event Delegation-----------------
 // 37
-let skills = document.querySelector("#skills");
-skills.addEventListener('click', function(event){
-    console.log(event.target.textContent)
-})
+// let skills = document.querySelector("#skills");
+// skills.addEventListener('click', function(event){
+//     console.log(event.target.textContent)
+// })
 
 // 38
 // let box = document.querySelector("#box");
@@ -355,12 +355,12 @@ skills.addEventListener('click', function(event){
 // })
 
 // 41
-let tasks = document.querySelector("#tasks");
-tasks.addEventListener('click', function(event){
-    if(event.target.matches("button")){
-        event.target.parentElement.remove()
-    }
-})
+// let tasks = document.querySelector("#tasks");
+// tasks.addEventListener('click', function(event){
+//     if(event.target.matches("button")){
+//         event.target.parentElement.remove()
+//     }
+// })
 
 // -----------------remove Elements---------------------
 //42
@@ -372,20 +372,75 @@ tasks.addEventListener('click', function(event){
 // btn.removeEventListener('click', handleClick);
 
 // 43
-let btn = document.querySelector("#btn");
-function firstHandler(){
-    console.log("First Handler")
-}
-function secondHandler(){
-    console.log("Second Handler")
-}
-btn.addEventListener('click', firstHandler);
-btn.addEventListener('click', secondHandler);
-btn.removeEventListener('click', firstHandler);
+// let btn = document.querySelector("#btn");
+// function firstHandler(){
+//     console.log("First Handler")
+// }
+// function secondHandler(){
+//     console.log("Second Handler")
+// }
+// btn.addEventListener('click', firstHandler);
+// btn.addEventListener('click', secondHandler);
+// btn.removeEventListener('click', firstHandler);
 
 // 44
-function handleKeydown(event) {
-    console.log("key pressed");
-}
-document.addEventListener("keydown", handleKeydown);
-document.removeEventListener("keydown", handleKeydown);
+// function handleKeydown(event) {
+//     console.log("key pressed");
+// }
+// document.addEventListener("keydown", handleKeydown);
+// document.removeEventListener("keydown", handleKeydown);
+
+// ---------------event object and event properties-----------
+// 45
+// let btn = document.querySelector("#btn");
+// btn.addEventListener('click', function(event){
+//     console.log(event);
+// })
+
+// 46
+// let btn = document.querySelector("#btn");
+// btn.addEventListener('click', function(event){
+//     console.log(event.type);
+// })
+
+// 47
+// let btn = document.querySelector("#btn");
+// btn.addEventListener('click', function(event){
+//     console.log(event.target);
+// })
+
+// 48
+// let box = document.querySelector("#box");
+// box.addEventListener('click', function(event){
+//     console.log(event.currentTarget);
+// })
+
+// 49
+// let btn = document.querySelector("#btn");
+// document.addEventListener('click', function(event){
+//     console.log(event.clickX);
+//     console.log(event.clickY);
+// })
+
+// 50
+document.addEventListener('click', function (event) {
+    console.log(event.clientX)
+    console.log(event.clientY)
+})
+
+// 51
+document.addEventListener('click', function (event) {
+    console.log(event.pageX)
+    console.log(event.pageY)
+})
+
+// 52
+let box = document.querySelector("#box")
+box.addEventListener("mousedown", function (event) {
+    console.log(event.button);
+});
+
+// 53
+document.addEventListener("keydown", function (event) {
+    console.log(event.repeat);
+});
