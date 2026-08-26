@@ -423,24 +423,42 @@ document.addEventListener("keydown", function (event) {
 // })
 
 // 50
-document.addEventListener('click', function (event) {
+// document.addEventListener('click', function (event) {
+//     console.log(event.clientX)
+//     console.log(event.clientY)
+// })
+
+// 51
+// document.addEventListener('click', function (event) {
+//     console.log(event.pageX)
+//     console.log(event.pageY)
+// })
+
+// 52
+// let box = document.querySelector("#box")
+// box.addEventListener("mousedown", function (event) {
+//     console.log(event.button);
+// });
+
+// 53
+// document.addEventListener("keydown", function (event) {
+//     console.log(event.repeat);
+// });
+
+//54
+document.addEventListener("keydown", function(event){
+    console.log(`Key pressed: ${event.key}`)
+})
+
+// 55
+document.addEventListener("keydown", function(event){
+    if (event.ctrlKey && event.key === 's') {
+        console.log("Ctrl + S detected");
+    }
+});
+
+// 56
+document.addEventListener("mousedown", function(event){
     console.log(event.clientX)
     console.log(event.clientY)
 })
-
-// 51
-document.addEventListener('click', function (event) {
-    console.log(event.pageX)
-    console.log(event.pageY)
-})
-
-// 52
-let box = document.querySelector("#box")
-box.addEventListener("mousedown", function (event) {
-    console.log(event.button);
-});
-
-// 53
-document.addEventListener("keydown", function (event) {
-    console.log(event.repeat);
-});
