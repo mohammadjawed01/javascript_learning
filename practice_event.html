@@ -41,7 +41,7 @@
     </style> -->
 
     <!--css for a  SIMPLE PRACTICE 3-->
-    <style>
+    <!-- <style>
         * {
             margin: 0px;
             padding: 0px;
@@ -81,6 +81,67 @@
         #btn:hover{
             background-color: rgb(24, 82, 66);
         }
+    </style> -->
+
+    <!--css for a  SIMPLE PRACTICE 4-->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Arial";
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        input {
+            display: block;
+        }
+
+        #main {
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+        }
+
+        .card {
+            max-width: 300px;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            border: 1px solid #555;
+            color: #fff;
+        }
+
+        .profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 7px;
+            overflow: hidden;
+        }
+
+        .profile img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card h5 {
+            margin-top: 3px;
+        }
+
+        .card p {
+            font-size: 12px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -102,10 +163,22 @@
     </div> -->
 
     <!-- 3 -->
-    <div id="main">
+    <!-- <div id="main">
         <input id="fileinp" type="file">
         <div id="btn">Upload file</div>
+    </div> -->
+
+    <!-- 4 -->
+    <div id="main">
+        <form action="">
+            <input type="text" placeholder="profile picture">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="occupation">
+            <input type="text" placeholder="info">
+            <input type="submit">
+        </form>
     </div>
+
 
 
     <script src="practice_event.js"></script>
