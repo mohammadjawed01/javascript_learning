@@ -446,19 +446,28 @@ document.addEventListener("keydown", function (event) {
 // });
 
 //54
-document.addEventListener("keydown", function(event){
-    console.log(`Key pressed: ${event.key}`)
-})
+// document.addEventListener("keydown", function(event){
+//     console.log(`Key pressed: ${event.key}`)
+// })
 
 // 55
-document.addEventListener("keydown", function(event){
-    if (event.ctrlKey && event.key === 's') {
-        console.log("Ctrl + S detected");
-    }
-});
+// document.addEventListener("keydown", function(event){
+//     if (event.ctrlKey && event.key === 's') {
+//         console.log("Ctrl + S detected");
+//     }
+// });
 
 // 56
-document.addEventListener("mousedown", function(event){
-    console.log(event.clientX)
-    console.log(event.clientY)
+// document.addEventListener("mousedown", function(event){
+//     console.log(event.clientX)
+//     console.log(event.clientY)
+// })
+
+// ----------------------simple pratice-----------------------
+// 1
+let sec = document.querySelector("select");
+let heading = document.querySelector(".heading");
+sec.addEventListener('change', function(event){
+    heading.textContent = `${event.target.value} device selected`
+    // console.log(event.target.value)
 })
