@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <!--css for a  SIMPLE PRACTICE 2-->
-    <style>
+    <!--css for a  SIMPLE PRACTICE 2-->
+    <!-- <style>
         *{
             margin: 0px;
             padding: 0px;
@@ -37,8 +38,52 @@
             user-select: none;
             letter-spacing: -1rem;
         }
+    </style> -->
+
+    <!--css for a  SIMPLE PRACTICE 3-->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Arial";
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        #main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+
+        }
+
+        input {
+            display: none;
+        }
+
+        #btn{
+            padding: 12px 24px;
+            background-color: rgb(43, 143, 144);
+            font-weight: 600;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #btn:hover{
+            background-color: rgb(24, 82, 66);
+        }
     </style>
 </head>
+
 <body>
     <!------------------- simple practice ---------------------->
     <!-- 1 -->
@@ -52,11 +97,18 @@
     </select> -->
 
     <!-- 2 -->
-    <div id="box">
+    <!-- <div id="box">
         <h2>a</h2>
+    </div> -->
+
+    <!-- 3 -->
+    <div id="main">
+        <input id="fileinp" type="file">
+        <div id="btn">Upload file</div>
     </div>
 
 
     <script src="practice_event.js"></script>
 </body>
+
 </html>
