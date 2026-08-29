@@ -35,41 +35,58 @@
 // })
 
 // 4
-let form = document.querySelector("form");
-let inputs = document.querySelectorAll("input");
-let main = document.querySelector("#main")
+// let form = document.querySelector("form");
+// let inputs = document.querySelectorAll("input");
+// let main = document.querySelector("#main")
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
+// form.addEventListener('submit', function (event) {
+//     event.preventDefault();
 
-    let card = document.createElement("div");
-    card.classList.add("card");
+//     let card = document.createElement("div");
+//     card.classList.add("card");
 
-    let profile = document.createElement("div");
-    profile.classList.add("profile");
+//     let profile = document.createElement("div");
+//     profile.classList.add("profile");
 
-    let img = document.createElement("img");
-    img.setAttribute("src", inputs[0].value)
+//     let img = document.createElement("img");
+//     img.setAttribute("src", inputs[0].value)
 
-    let h3 = document.createElement("h3");
-    h3.textContent = inputs[1].value
-    let h5 = document.createElement("h5");
-    h5.textContent = inputs[2].value
-    let p = document.createElement("p");
-    p.textContent = inputs[3].value
+//     let h3 = document.createElement("h3");
+//     h3.textContent = inputs[1].value
+//     let h5 = document.createElement("h5");
+//     h5.textContent = inputs[2].value
+//     let p = document.createElement("p");
+//     p.textContent = inputs[3].value
 
-    profile.appendChild(img);
-    card.appendChild(profile);
+//     profile.appendChild(img);
+//     card.appendChild(profile);
 
-    card.appendChild(h3)
-    card.appendChild(h5)
-    card.appendChild(p)
-    main.appendChild(card)
+//     card.appendChild(h3)
+//     card.appendChild(h5)
+//     card.appendChild(p)
+//     main.appendChild(card)
 
-    inputs.forEach(function(inp){
-        if (inp.type !== "submit") {
-            inp.value = "";
-        }
-    })
+//     inputs.forEach(function(inp){
+//         if (inp.type !== "submit") {
+//             inp.value = "";
+//         }
+//     })
 
+// })
+
+// 5
+// let box = document.querySelector(".box");
+// box.addEventListener('mouseover', function(){
+//     box.style.backgroundColor = "blue"
+// })
+
+// box.addEventListener('mouseout', function(){
+//     box.style.backgroundColor = "red"
+// })
+
+// 6
+let box = document.querySelector(".box")
+window.addEventListener('mousemove', function(e){
+    box.style.top = e.clientY + "px";
+    box.style.left = e.clientX + "px";
 })
