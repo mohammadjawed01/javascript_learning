@@ -92,18 +92,26 @@
 // })
 
 // 7
-let inp =  document.querySelector("input");
-let span = document.querySelector("span");
+// let inp =  document.querySelector("input");
+// let span = document.querySelector("span");
 
-inp.addEventListener('input', function(){
-    let left = 20 - inp.value.length;
-    span.textContent = left
+// inp.addEventListener('input', function(){
+//     let left = 20 - inp.value.length;
+//     span.textContent = left
 
-    if (left<0) {
-        span.style.color = "red"
-    }
+//     if (left<0) {
+//         span.style.color = "red"
+//     }
 
-    else{
-        span.style.color = "black"
-    }
+//     else{
+//         span.style.color = "black"
+//     }
+// })
+
+// 
+let ul = document.querySelector("ul");
+ul.addEventListener('click', function(e){
+    // console.log(e);
+    e.target.classList.toggle("lt")
+    // e.target.style.textDecoration.toggle = "line-through"
 })
