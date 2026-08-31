@@ -13,10 +13,34 @@
 // })
 
 // input event
-let input = document.querySelector("input");
-input.addEventListener('change', function(e) {
-    console.log(input.value)
-})
+// let input = document.querySelector("input");
+// input.addEventListener('change', function(e) {
+//     console.log(input.value)
+// })
+
+// focus event
+// let input = document.querySelector("input");
+// input.addEventListener('focus', function() {
+//     console.log("input focused")
+// })
+
+// blur event
+// let input = document.querySelector("input");
+// input.addEventListener('blur', function() {
+//     console.log("input lost focus")
+// })
+
+//focus and blur validation
+// let email = document.querySelector("#email");
+// email.addEventListener('blur', function(){
+//     if(email.value === ""){
+//         console.log("email is required")
+//     }
+// })
+
+//focus method
+    let username = document.querySelector("#username");
+    username.focus()
 
 // 
 // let nm = document.querySelector("#name");
