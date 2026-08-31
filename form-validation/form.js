@@ -39,8 +39,19 @@
 // })
 
 //focus method
-    let username = document.querySelector("#username");
-    username.focus()
+    // let username = document.querySelector("#username");
+    // username.focus()
+
+// form validation
+let username = document.querySelector("#username");
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (username.value === "") {
+        console.log("username required");
+        return;
+    }
+    console.log("form is valid")
+})
 
 // 
 // let nm = document.querySelector("#name");
