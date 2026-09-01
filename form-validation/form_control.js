@@ -12,9 +12,18 @@
 // let male = document.querySelector("#male");
 // console.log(male.checked)
 
-let selected = document.querySelector('input[name="gender"]:checked');
-if (selected) {
-    console.log(selected.value);
-}
+// let selected = document.querySelector('input[name="gender"]:checked');
+// if (selected) {
+//     console.log(selected.value);
+// }
+
+// SELECT/DROPDOWN
+let city = document.querySelector("#city");
+// console.log(city.value)
+// let selectedOption = city.options[city.selectedIndex];
+// console.log(selectedOption);
+city.addEventListener('change', function(e){
+    console.log(city.value)
+})
 
 
