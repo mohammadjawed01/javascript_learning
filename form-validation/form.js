@@ -43,14 +43,48 @@
     // username.focus()
 
 // form validation
+// let username = document.querySelector("#username");
+// form.addEventListener('submit', function(e){
+//     e.preventDefault();
+//     if (username.value === "") {
+//         console.log("username required");
+//         return;
+//     }
+//     console.log("form is valid")
+// })
+
+// form validation
+// let username = document.querySelector("#username");
+// form.addEventListener('submit', function(e){
+//     e.preventDefault();
+//     if (username.value === "") {
+//         console.log("username required");
+//         return;
+//     }
+//     if (email.value === "") {
+//         console.log("email required");
+//         return;
+//     }
+//     console.log("form submitted successful");
+// })
+
+// form validation
+let form = document.querySelector("form")
 let username = document.querySelector("#username");
+let email = document.querySelector("#email");
 form.addEventListener('submit', function(e){
     e.preventDefault();
     if (username.value === "") {
         console.log("username required");
         return;
     }
-    console.log("form is valid")
+    if (email.value === "") {
+        console.log("email required");
+        return;
+    }
+    let data = new FormData(form);
+    console.log(data.get("username"))
+    console.log(data.get("email"))
 })
 
 // 
