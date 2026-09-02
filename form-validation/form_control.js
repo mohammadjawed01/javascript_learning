@@ -49,18 +49,66 @@
 
 // RADIO + FORM EXAMPLE
 
-let form = document.querySelector("form");
-form.addEventListener('submit', function(e){
+// let form = document.querySelector("form");
+// form.addEventListener('submit', function(e){
+//     e.preventDefault();
+
+//     let selected = document.querySelector('input[name="plan"]:checked');
+
+//     if (!selected) {
+//         alert("please select a plan");
+//         return
+//     }
+
+//     alert("selected value")
+// })
+
+
+// 
+// let form = document.querySelector("form");
+// let terms = document.querySelector("#terms")
+// form.addEventListener('submit', function(e){
+//     e.preventDefault();
+
+//     if (!terms.checked) {
+//         console.log("Please accept the terms") 
+//         return;       
+//     }
+
+//     console.log("Terms accepted")
+// })
+
+// 
+// let form = document.querySelector("form");
+// form.addEventListener('submit', function(e){
+//     e.preventDefault();
+//     let selected  = document.querySelector('input[name="plan"]:checked');
+//     if(!selected){
+//         console.log("No plan selected")
+//     } 
+//     console.log(selected.value);
+// })
+
+// 
+let city = document.querySelector("#city");
+city.addEventListener('change', function(e){
     e.preventDefault();
+    console.log(city.value)
+    console.log(city.selectedIndex)
+})
 
-    let selected = document.querySelector('input[name="plan"]:checked');
+// 
+let form = document.querySelector("#form");
+form.addEventListener('submit', function(e){
+    e.preventDefault()
 
-    if (!selected) {
-        alert("please select a plan");
-        return
+    let selected = document.querySelector('input[name="skill"]:checked');
+
+    if(!selected){
+        console.log("please select a skill")
+        return;
     }
-
-    alert("selected value")
+    console.log(selected.value);
 })
 
 
