@@ -8,7 +8,15 @@ localStorage.clear();
 
 // 
 localStorage.setItem("age", 20);
-console.log(localStorage.getItem("age"));   //localStorage give a string value 
+// console.log(localStorage.getItem("age"));   //localStorage give a string value 
 //if we wnat a number than we do 
 let age = Number(localStorage.getItem("age"));
-console.log(typeof age)
+// console.log(typeof age);
+
+// session storage
+sessionStorage.setItem("username", "jawed");
+console.log(sessionStorage.getItem("username")); 
+sessionStorage.removeItem("username");
+sessionStorage.clear();
+
+
