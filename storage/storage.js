@@ -28,17 +28,33 @@ sessionStorage.setItem("username", "jawed");
 
 
 // they take a object as a string for solving this problem we use the JSON file
-let user = {
-    name: "jawed",
-    age: 20
-}
+// let user = {
+//     name: "jawed",
+//     age: 20
+// }
 
-localStorage.setItem("user",JSON.stringify(user));
+// localStorage.setItem("user", JSON.stringify(user));
 
 // from string to obj
 
-let data = localStorage.getItem("user");
-let userdata = JSON.parse(data);
-console.log(userdata.age)
+// let user = localStorage.getItem("user");
+// let userdata = JSON.parse(data);
+// console.log(userdata.age)
+
+//
+// let skills = ["HTML", "CSS", "JavaScript"];
+// localStorage.setItem("skills", JSON.stringify(skills));
+// let data = JSON.parse(localStorage.getItem("skills"));
+// console.log(data[1]);
+
+//
+let user = {
+    name: "Jawed",
+    skills: ["HTML", "CSS", "JavaScript"]
+}
+
+localStorage.setItem("user", JSON.stringify(user));
+let data = JSON.parse(localStorage.getItem("user"));
+console.log(data.skills[1]);
 
 
