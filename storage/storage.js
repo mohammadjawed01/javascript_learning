@@ -10,13 +10,35 @@ localStorage.clear();
 localStorage.setItem("age", 20);
 // console.log(localStorage.getItem("age"));   //localStorage give a string value 
 //if we wnat a number than we do 
-let age = Number(localStorage.getItem("age"));
+// let age = Number(localStorage.getItem("age"));
 // console.log(typeof age);
 
 // session storage
 sessionStorage.setItem("username", "jawed");
-console.log(sessionStorage.getItem("username")); 
-sessionStorage.removeItem("username");
-sessionStorage.clear();
+// console.log(sessionStorage.getItem("username")); 
+// sessionStorage.removeItem("username");
+// sessionStorage.clear();
+
+// from obj to string
+// let user = {
+//     name: "jawed",
+//     age: 20
+// }
+// localStorage.setItem("user", user);
+
+
+// they take a object as a string for solving this problem we use the JSON file
+let user = {
+    name: "jawed",
+    age: 20
+}
+
+localStorage.setItem("user",JSON.stringify(user));
+
+// from string to obj
+
+let data = localStorage.getItem("user");
+let userdata = JSON.parse(data);
+console.log(userdata.age)
 
 
