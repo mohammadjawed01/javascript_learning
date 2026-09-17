@@ -7,7 +7,7 @@ function debouncing(fnc, delay) {
         timer = setTimeout(() => {
             fnc(...args);
         }, delay)
-    }
+    };
 }
 
 input.addEventListener('input', debouncing(function () {
