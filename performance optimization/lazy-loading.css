@@ -34,7 +34,7 @@ h1 {
     margin-bottom: 700px;
 
     /* Hidden initially */
-    /* opacity: 0; */
+    opacity: 0;
 
     /* Fade-in */
     transition: opacity 0.8s ease;
