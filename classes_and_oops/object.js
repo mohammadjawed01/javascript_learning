@@ -6,9 +6,12 @@ const user = {
     signedIn: true,
 
     getUserDetail: function(){
-        console.log("user detail recevied from database");
+        // console.log("user detail recevied from database");
+        console.log(`username: ${this.username}`);
+        console.log(this);
     }
 }
 
 console.log(user.username);
-console.log(user.getUserDetail());
+// console.log(user.getUserDetail());
+console.log(this);
