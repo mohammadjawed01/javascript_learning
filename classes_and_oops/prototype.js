@@ -24,3 +24,17 @@ Array.prototype.heyJawed = function(){
 myHeroes.jawed();
 myHeroes.heyJawed();
 // heroPowers.heyJawed();
+
+
+
+// inheritance
+
+let anotherUser = "zubair      ";
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(`true length of the string is ${this.trim().length}`);
+}
+
+anotherUser.trueLength();
+"jawed".trueLength();
+"codeWithJawed".trueLength();
