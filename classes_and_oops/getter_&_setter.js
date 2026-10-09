@@ -12,8 +12,17 @@ class User{
         this._password = value;
     }
 
+    get email(){
+        return this._email.toUpperCase();
+    }
+
+    set email(value){
+        this._email = value;
+    }
+
 }
 
 let javed = new User("javed@ai.com", "abc");
 
+console.log(javed.email)
 console.log(javed.password)
